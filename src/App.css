@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+}
+
+.navbar {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+  background: #080808;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar h2 {
+  font-size: 28px;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  background: linear-gradient(90deg, #111 30%, #222 100%);
+}
+
+.small-title,
+.section-title {
+  letter-spacing: 3px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 70px;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+.hero-text {
+  font-size: 18px;
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 14px 28px;
+  border: none;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.about,
+.services,
+.plans,
+.contact {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.about h2,
+.services h2,
+.plans h2,
+.contact h2 {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.about p {
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.7;
+  color: #bbb;
+}
+
+.services {
+  background: #181818;
+}
+
+.cards {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.card,
+.plan {
+  background: #222;
+  padding: 35px;
+  width: 280px;
+  min-height: 180px;
+}
+
+.card h3,
+.plan h3 {
+  margin-bottom: 20px;
+}
+
+.card p,
+.plan p {
+  color: #aaa;
+  line-height: 1.7;
+}
+
+.plans {
+  background: #111;
+}
+
+.plan {
+  min-height: 300px;
+}
+
+.plan h4 {
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+.plan button {
+  margin-top: 20px;
+}
+
+.featured {
+  border: 1px solid white;
+}
+
+.contact {
+  background: #181818;
+}
+
+.contact p:not(.section-title) {
+  color: #bbb;
+  margin: 12px;
+}
+
+.contact button {
+  margin-top: 20px;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+  background: #080808;
+  color: #777;
+}
+
+@media (max-width: 700px) {
+  .links {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .hero {
+    min-height: 80vh;
+  }
+}
